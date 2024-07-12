@@ -350,23 +350,23 @@ window.displayShadowmap = function (e) {
 /*
     File handler
 */
-window.handleFile = function (e) {
-  var reader = new FileReader();
-  reader.onload = function (evt) {
-    var parsed = JSON.parse(evt.target.result);
-    for (var layer in parsed) {
-      var aux = parsed[layer];
-      layers.addLayer(
-        layer,
-        aux["coordinates"],
-        aux["indices"],
-        aux["color"],
-        aux["normals"]
-      );
-    }
-  };
-  reader.readAsText(e.files[0]);
-};
+window.addEventListener('load', function() {
+  fetch('path/to/chicago.json')
+    .then(response => response.json())
+    .then(data => {
+      for (var layer in data) {
+        var aux = data[layer];
+        layers.addLayer(
+          layer,
+          aux["coordinates"],
+          aux["indices"],
+          aux["color"],
+          aux["normals"]
+        );
+      }
+      document.getElementById('status').textContent = 'Layers loaded successfully';
+    });
+});
 
 /*
     Update transformation matrices
