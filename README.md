@@ -1,11 +1,11 @@
-# Urban Shadow Mapping Visualization
+# Shadow Map WebGL
 
 This project aims to implement shadow mapping techniques for urban settings using WebGL. By rendering shadows from directional light sources on 3D city models, we provide a tool for visualizing and analyzing shadow patterns in urban environments. The project incorporates multiple rendering techniques to showcase different aspects of shadow mapping, including perspective and orthographic projections, adjustable light directions, and optional advanced features.
 
 ![Manhattan shadow](manhattan.gif)
 
-- **Access this project:** [Link to hosted project if available]
-- **GitHub repo:** [Link to GitHub repository]
+- **Access this project:** https://komar41.github.io/shadow-maps-webgl/
+- **GitHub repo:** https://github.com/komar41/shadow-maps-webgl/
 - **Tools used:** WebGL, JavaScript, HTML, CSS
 
 ## How to run:
