@@ -38,9 +38,8 @@ This project aims to implement shadow mapping techniques for urban settings usin
     - Smooth transitions between different viewpoints
 
 5. **Shadow Map Visualization**
-    ![Shadow map](shadowmap.gif)
-   
     - Renders the shadow map texture to screen when enabled
+![Shadow map](shadowmap.gif)
 
 ## Interaction Features
 - Rotate camera view by moving the mouse around the canvas
