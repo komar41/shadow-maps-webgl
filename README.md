@@ -2,7 +2,7 @@
 
 This project aims to implement shadow mapping techniques for urban settings using WebGL. By rendering shadows from directional light sources on 3D city models, we provide a tool for visualizing and analyzing shadow patterns in urban environments. The project incorporates multiple rendering techniques to showcase different aspects of shadow mapping, including perspective and orthographic projections, adjustable light directions, and optional advanced features.
 
-![Shadow Map Example](manhattan_shadow.png)
+![Manhattan shadow](manhattan.gif)
 
 - **Access this project:** [Link to hosted project if available]
 - **GitHub repo:** [Link to GitHub repository]
@@ -11,14 +11,13 @@ This project aims to implement shadow mapping techniques for urban settings usin
 ## Components
 
 ### 1. 3D Urban Model Rendering
-![3D Urban Model](assignment_2_example.png)
 - Renders a 3D city model based on JSON file input
 - Supports multiple layers: buildings, water, parks, and surface
 - Uses unique buffer and VAO for each layer
 - Implements normal-based shading for building sides
 
 ### 2. Shadow Mapping
-![Manhattan Shadow](manhattan_shadow.png)
+![Manhattan Shadow](manhattan.png)
 - Implements shadow mapping technique for directional light
 - Supports both perspective and orthographic projections
 - Allows adjustable light direction
@@ -34,7 +33,7 @@ This project aims to implement shadow mapping techniques for urban settings usin
 - Smooth transitions between different viewpoints
 
 ### 5. Optional Shadow Map Visualization
-![Shadow Map](shadow_map.png)
+![Shadow map](shadowmap.gif)
 - Renders the shadow map texture to screen when enabled
 
 ## Interaction Features
@@ -55,6 +54,7 @@ This project aims to implement shadow mapping techniques for urban settings usin
 - RenderToScreen functionality for displaying shadow map texture
 
 ## Data Format
+[Manhattan](https://fmiranda.me/courses/cs425-spring-2021/manhattan.json.zip) or a region of [Chicago](https://fmiranda.me/courses/cs425-spring-2021/chicago.json.zip).
 The project uses a specific JSON format for city models, including:
 - Coordinates, indices, and colors for buildings, water, parks, and surface layers
 - Normal data for building layers
