@@ -16,28 +16,28 @@ This project aims to implement shadow mapping techniques for urban settings usin
 
 ## Components
 
-### 1. 3D Urban Model Rendering
+1. **3D Urban Model Rendering**
 - Renders a 3D city model based on JSON file input
 - Supports multiple layers: buildings, water, parks, and surface
 - Uses unique buffer and VAO for each layer
 - Implements normal-based shading for building sides
 
-### 2. Shadow Mapping
+2. **Shadow Mapping**
 - Implements shadow mapping technique for directional light
 - Supports both perspective and orthographic projections
 - Allows adjustable light direction
 
-### 3. Configuration Panel
+3. **Configuration Panel**
 - Dropdown menu for projection type selection (perspective/orthographic)
 - Slider for adjusting light direction (0-360 degrees)
 - Checkbox for toggling shadow map texture display
 - File input for loading JSON city models
 
-### 4. Camera Controls
+4. **Camera Controls**
 - Interactive camera rotation around the model's centerpoint
 - Smooth transitions between different viewpoints
 
-### 5. Shadow Map Visualization
+5. **Shadow Map Visualization**
 ![Shadow map](shadowmap.gif)
 - Renders the shadow map texture to screen when enabled
 
