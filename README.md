@@ -9,6 +9,7 @@ This project aims to implement shadow mapping techniques for urban settings usin
 - **Tools used:** WebGL, JavaScript, HTML, CSS
 
 ## How to run:
+- Go to the deployed site: https://komar41.github.io/shadow-maps-webgl/
 - Download the JSON file for [Manhattan](https://fmiranda.me/courses/cs425-spring-2021/manhattan.json.zip) or [Chicago](https://fmiranda.me/courses/cs425-spring-2021/chicago.json.zip).
 - Unzip the downloaded file to extract the JSON.
 - In the configuration panel, locate the file input option.
