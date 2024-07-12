@@ -8,6 +8,12 @@ This project aims to implement shadow mapping techniques for urban settings usin
 - **GitHub repo:** [Link to GitHub repository]
 - **Tools used:** WebGL, JavaScript, HTML, CSS
 
+## How to run:
+- Download the JSON file for [Manhattan](https://fmiranda.me/courses/cs425-spring-2021/manhattan.json.zip) or [Chicago](https://fmiranda.me/courses/cs425-spring-2021/chicago.json.zip).
+- Unzip the downloaded file to extract the JSON.
+- In the configuration panel, locate the file input option.
+- Click on the file input and select the extracted JSON file (manhattan.json or chicago.json).
+
 ## Components
 
 ### 1. 3D Urban Model Rendering
@@ -17,7 +23,6 @@ This project aims to implement shadow mapping techniques for urban settings usin
 - Implements normal-based shading for building sides
 
 ### 2. Shadow Mapping
-![Manhattan Shadow](manhattan.png)
 - Implements shadow mapping technique for directional light
 - Supports both perspective and orthographic projections
 - Allows adjustable light direction
@@ -32,7 +37,7 @@ This project aims to implement shadow mapping techniques for urban settings usin
 - Interactive camera rotation around the model's centerpoint
 - Smooth transitions between different viewpoints
 
-### 5. Optional Shadow Map Visualization
+### 5. Shadow Map Visualization
 ![Shadow map](shadowmap.gif)
 - Renders the shadow map texture to screen when enabled
 
@@ -49,18 +54,13 @@ This project aims to implement shadow mapping techniques for urban settings usin
 - Supports JSON file parsing for city model data
 - Implements matrix operations for view, model, and projection transformations
 
-## Optional Enhancements
-- Percentage Closer Filtering (PCF) for smoother shadow edges
-- RenderToScreen functionality for displaying shadow map texture
-
 ## Data Format
-[Manhattan](https://fmiranda.me/courses/cs425-spring-2021/manhattan.json.zip) or a region of [Chicago](https://fmiranda.me/courses/cs425-spring-2021/chicago.json.zip).
 The project uses a specific JSON format for city models, including:
 - Coordinates, indices, and colors for buildings, water, parks, and surface layers
 - Normal data for building layers
 
 Example JSON structure:
-```json
+```
 {
     "buildings": {
         "coordinates": [...],
@@ -72,3 +72,4 @@ Example JSON structure:
     "parks": {...},
     "surface": {...}
 }
+```
