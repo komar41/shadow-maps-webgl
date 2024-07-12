@@ -39,6 +39,7 @@ This project aims to implement shadow mapping techniques for urban settings usin
 
 5. **Shadow Map Visualization**
     - Renders the shadow map texture to screen when enabled
+    - 
 ![Shadow map](shadowmap.gif)
 
 ## Interaction Features
