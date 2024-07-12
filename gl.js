@@ -351,9 +351,10 @@ window.displayShadowmap = function (e) {
     File handler
 */
 window.addEventListener('load', function() {
-  fetch('path/to/chicago.json')
+  fetch('chicago.json')
     .then(response => response.json())
     .then(data => {
+      layers = new Layers();
       for (var layer in data) {
         var aux = data[layer];
         layers.addLayer(
@@ -365,6 +366,11 @@ window.addEventListener('load', function() {
         );
       }
       document.getElementById('status').textContent = 'Layers loaded successfully';
+      initialize();
+    })
+    .catch(error => {
+      document.getElementById('status').textContent = 'Failed to load layers';
+      console.error('Error loading JSON:', error);
     });
 });
 
